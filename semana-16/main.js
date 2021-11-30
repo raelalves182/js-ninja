@@ -1,5 +1,6 @@
 (function() {
-    /*
+  'use strict';
+  /*
   1. Envolva todo o conteúdo desse desafio em uma IIFE.
   2. Adicione a diretiva 'use strict';
   3. Crie um arquivo index.html e adicione esse script à ele.
@@ -15,8 +16,10 @@
   E assim por diante, até a última.
   */
   console.log( 'As letras do seu nome:' );
-  // ?
-
+  var name = 'Israel';
+  for( var i = 0, len = name.length; i < len; i++ ) {
+    console.log( name.charAt(i) + ' é a ' + (i + 1) + 'ª letra do meu nome.' );
+  }
   /*
   - Declare uma variável chamada `fullName`, que receba seu nome completo,
   escrito no formato de slug (caixa baixa e palavras separadas por um traço).
@@ -30,8 +33,12 @@
   console.log para cada formato.
   */
   console.log( '\nNome convertido à partir de um slug:' );
-  // ?
-
+  var fullName = 'Israel-da-silva-alves';
+  var newfullName = fullName.split( '-' ).map(function(name) {
+    return name.charAt(0).toUpperCase() + name.slice(1);
+  }).join( ' ' );
+  console.log(fullName);
+  console.log(newfullName);
   /*
   - Crie um array com 5 nomes. Reduza esses nomes a uma única string, separando
   cada nome por vírgula. Entre o penúltimo e o último nome, o separador deve
@@ -42,7 +49,12 @@
   5 nomes foi somente uma sugestão ;)
   */
   console.log( '\nMeus amigos:' );
-  // ?
+  var friends = [ 'Paulo', 'Pedro', 'israel', 'Sullivan', 'Kel' ];
+  var phrase = friends.reduce(function(acumulado, atual, index) {
+    var separator = friends.length - 1 === index ? ' e ' : ' , ';
+    return acumulado + separator + atual;
+  }).concat( ' são meus amigos.' );
+  console.log( phrase );
 
   /*
   Usando o replace(), faça a string "Roberto" virar "Roberta".
