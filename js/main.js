@@ -25,5 +25,8 @@
   // "use strict" objetos, variáveis e funcões devem ter nomes diferentes
 
   // Expressões regulares = manipular strings
-  
+  /* Flags --> g: global / i: ignore case 
+     Termos --> \w: carcteres alfanuméricas e _
+     \d: números (digitos)
+  */
 })();
