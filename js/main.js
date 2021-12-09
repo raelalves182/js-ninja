@@ -23,4 +23,7 @@
   // com "use strict" no escopo global dentro de funções "this === undefined"
   // "use strict" delete lança uma SintaxError se não puder deletar / fora do restrito, delete não faz nada e é avaliado como false.
   // "use strict" objetos, variáveis e funcões devem ter nomes diferentes
+
+  // Expressões regulares = manipular strings
+  
 })();
