@@ -30,9 +30,13 @@
      \d: números (digitos)
   */
 
-  /*
+  /*  Regex
     [] -> Lista, corresponde a um dos que estiverem dentro
     () -> Grupo/Captura
     \w -> Caracteres alfanúmericos [A-Za-z0-9]
+    \d -> Digítos [0-9]
+    \s -> Espaço em branco
+    \n -> Quebra de linha (nova linha)
+    . -> qualquer caractere (exceto quebra de linha)
   */
 })();
