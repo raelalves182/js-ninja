@@ -29,4 +29,10 @@
      Termos --> \w: carcteres alfanuméricas e _
      \d: números (digitos)
   */
+
+  /*
+    [] -> Lista, corresponde a um dos que estiverem dentro
+    () -> Grupo/Captura
+    \w -> Caracteres alfanúmericos [A-Za-z0-9]
+  */
 })();
