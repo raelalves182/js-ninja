@@ -39,4 +39,16 @@
     \n -> Quebra de linha (nova linha)
     . -> qualquer caractere (exceto quebra de linha)
   */
+
+
+  /* Window
+    Todos os objetos globais não precisam ser referenciados no use strict
+    window.prompt > faz uma pergunta 
+      Ex.: 
+      if (prompt( 'Pergunta?' ))
+        console.log( 'resposta ok!' );
+      else
+        console.log( 'resposta não ok!' );
+
+  */
 })();
