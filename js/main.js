@@ -2,8 +2,8 @@
     'use strict';
   // escopo local se não usar o 'var' ele cria a variável em escopo global também
   // 'use strict' deixa em escopo restrito
-  //var name = 'Israel Alves'
-  //console.log(name);
+    var name = 'Israel Alves'
+    console.log(name);
 
   // "with" diminui a quantidade de chamadas se tiver obj com muitas propridades, ele não é permitido no modo "use strict"
   /* var obj = {
@@ -53,6 +53,6 @@
 
   */
 
-    var $inputs = doc.getElementsByTagName('input');
-    console.log( $inputs.length );
+    // var $inputs = doc.getElementsByTagName('input');
+    // console.log( $inputs.length );
 })(window, document);
