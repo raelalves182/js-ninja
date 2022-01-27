@@ -53,6 +53,15 @@
 
   */
 
-    // var $inputs = doc.getElementsByTagName('input');
-    // console.log( $inputs.length );
+  // var $inputs = doc.getElementsByTagName('input');
+  // console.log( $inputs.length );
+
+  /* Sync vs Async */
+
+  console.log(0);
+  for( var i = 1; i < 10; i++ ) {
+    console.log(i);
+  }
+  console.log(11);
+
 })(window, document);
