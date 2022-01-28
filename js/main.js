@@ -56,12 +56,18 @@
   // var $inputs = doc.getElementsByTagName('input');
   // console.log( $inputs.length );
 
-  /* Sync vs Async */
+  /* Sync vs Async 
 
   console.log(0);
   for( var i = 1; i < 10; i++ ) {
     console.log(i);
   }
-  console.log(11);
+  console.log(11); 
+
+  console.log('início');
+  document.addEventListener('click', function() {
+    console.log('clicou no documento');
+  }, false);
+  console.log('fim'); */
 
 })(window, document);
