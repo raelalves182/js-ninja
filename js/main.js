@@ -68,6 +68,43 @@
   document.addEventListener('click', function() {
     console.log('clicou no documento');
   }, false);
+  console.log('fim'); 
+
+  // setTimeout()
+  // setInterval()
+
+  console.log('início');
+    setTimeout(function() {
+      console.log( 'executou setTimeout' )
+    }, 1000);
   console.log('fim'); */
+
+  // setTimeout() X setInterval()  
+
+  // var counter = 0;
+  // function timer() {
+  //   console.log( 'timer', counter++ );
+  //   if( counter > 10 )
+  //     return;
+  //   setTimeout( timer, 1000 );
+  // }
+  // timer();
+
+  // clearTimeout(id), clearInterval(id) > serve para limpar o setInterval
+
+  // var counter = 0;
+  // var $button = doc.querySelector('[data-js="button"]');
+  // var temporizador;
+  // function timer() {
+  //   console.log( 'timer', counter++ );
+  //   if( counter > 20 )
+  //     return;
+  //   temporizador = setTimeout( timer, 1000 );
+  // }
+  // timer();
+
+  // $button.addEventListener('click', function() {
+  //   clearTimeout(temporizador);
+  // }, false);
 
 })(window, document);
