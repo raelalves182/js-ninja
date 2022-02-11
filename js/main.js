@@ -107,4 +107,12 @@
   //   clearTimeout(temporizador);
   // }, false);
 
+  // const props=[
+  //   {age: 23, name:'rael'},
+  //   {age: 27, name:'el'},
+  //   {age: 20, name:'kel'},
+  // ];
+  // const [{name},,]=props;
+  // console.log(name)
+
 })(window, document);
