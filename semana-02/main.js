@@ -6,18 +6,18 @@
   */
 
   // Crie uma função que receba dois argumentos e retorne a soma dos mesmos.
-  function Soma(x, y) {
+  function sum(x, y) {
     return x + y;
   }
 
   // Declare uma variável que receba a invocação da função criada acima, passando dois números quaisquer por argumento, e somando `5` ao resultado retornado da função.
-
+  var mysum = sum(2, 3) + 5;
 
   // Qual o valor atualizado dessa variável?
-
+  mysum = 10;
 
   // Declare uma nova variável, sem valor.
-
+  var rael;
 
   /*
   Crie uma função que adicione um valor à variável criada acima, e retorne a string:
