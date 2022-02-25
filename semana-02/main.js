@@ -24,13 +24,17 @@
       O valor da variável agora é VALOR.
   Onde VALOR é o novo valor da variável.
   */
-  
+  function rael() {
+    var rael = 1;
+    return 'O valor da variável agora é ' + rael
+  }
 
   // Invoque a função criada acima.
-
+  rael()
 
   // Qual o retorno da função? (Use comentários de bloco).
-
+  
+  /* 'O valor da variavel agora é 1' */
 
   /*
   Crie uma função com as seguintes características:
