@@ -44,18 +44,25 @@
   3. O retorno da função deve ser a multiplicação dos 3 argumentos, somando `2` ao resultado da multiplicação.
   */
 
+  function rael(x, y, z) {
+		if (x === undefined || y === undefined || z === undefined) {
+		return 'Preencha todos os valores corretamente!'
+    }
+	  return (x * y * z) + 2;
+	}
+
 
   // Invoque a função criada acima, passando só dois números como argumento.
-
+  rael(2, 3)
 
   // Qual o resultado da invocação acima? (Use comentários para mostrar o valor retornado).
-
+  // 'Preencha todos os valores corretamente!'
 
   // Agora invoque novamente a função criada acima, mas passando todos os três argumentos necessários.
-
+  rael(2, 3, 4)
 
   // Qual o resultado da invocação acima? (Use comentários para mostrar o valor retornado).
-
+  // 26
 
   /*
   Crie uma função com as seguintes características:
