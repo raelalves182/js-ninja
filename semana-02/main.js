@@ -74,7 +74,7 @@
   5. Se nenhum argumento for passado, retorne o valor booleano `false`.
   6. E ainda, se nenhuma das condições acima forem atendidas, retorne `null`.
   */
- function newFunction(a, b, c) {
+ function newFunction(x, y, z) {
   if (x !== undefined && y === undefined && z === undefined) {
     return x;
   } 
