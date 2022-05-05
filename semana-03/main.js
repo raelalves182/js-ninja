@@ -120,47 +120,50 @@
   */
     pessoa.mostrarAltura();
     // "Minha altura é 1.75m."
-    
+
   /*
   Faça a `pessoa` fazer 3 aniversários.
   */
-
-
+    pessoa.fazerAniversario();
+    pessoa.fazerAniversario();
+    pessoa.fazerAniversario();
   /*
   Quantos anos a `pessoa` tem agora? (Use a instrução para responder e
   comentários inline ao lado da instrução para mostrar qual foi a resposta
   retornada)
   */
-
+    pessoa.mostrarIdade();
 
   /*
   Agora, faça a `pessoa` caminhar alguns metros, invocando o método `andar` 3x,
   com metragens diferentes passadas por parâmetro.
   */
-
-
+    pessoa.andar(100);
+    pessoa.andar(200);
+    pessoa.andar(50);
   /*
   A pessoa ainda está andando? (Use a instrução para responder e comentários
   inline ao lado da instrução para mostrar qual foi a resposta retornada)
   */
-
+    pessoa.andando;
 
   /*
   Se a pessoa ainda está andando, faça-a parar.
   */
-
+    pessoa.parar();
 
   /*
   E agora: a pessoa ainda está andando? (Use uma instrução para responder e
   comentários inline ao lado da instrução para mostrar a resposta retornada)
   */
-
+    pessoa.andando;
+    // false
 
   /*
   Quantos metros a pessoa andou? (Use uma instrução para responder e comentários
   inline ao lado da instrução para mostrar a resposta retornada)
   */
-
+    pessoa.caminhouQuantosMetros;
 
   /*
   Agora vamos deixar a brincadeira um pouco mais divertida! :D
@@ -179,9 +182,27 @@
   método), que será concatenada com a frase de retorno, mostrando a resposta
   correta, de acordo com os dados inseridos no objeto.
   */
+    pessoa.apresentacao = function() {
+      var sexo = 'o';
+      var idadeAnos = 'anos';
+      var metrosCaminhados = 'metros';
 
+      if( pessoa.sexo === 'Feminino' ) {
+        sexo = 'a';
+      }
+
+      if( pessoa.idade === 1 ) {
+        idadeAnos = 'ano';
+      }
+
+      if( pessoa.caminhouQuantosMetros === 1 ) {
+        metrosCaminhados = 'metro';
+      }
+
+      return 'Olá, eu sou o ' + sexo + ' ' + pessoa.nome + ' ' + pessoa.sobrenome + ', tenho ' + pessoa.idade + ' ' + idadeAnos + ' anos, ' + pessoa.altura + ', meu peso é ' + pessoa.peso + ' e, só hoje, eu já caminhei ' + pessoa.caminhouQuantosMetros + ' ' + metrosCaminhados + '!';
+    };
 
   // Agora, apresente-se ;)
-
+    pessoa.apresentacao();
     
 })();
