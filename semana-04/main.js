@@ -108,7 +108,21 @@ para o contrário.
  - Se couber somente mais uma pessoa, mostrar a palavra "pessoa" no retorno
  citado acima, no lugar de "pessoas".
  */
+  carro.adicionarPessoas = function( numeroPessoas ) {
+    var totalPessoas = carro.quantidadePessoas + numeroPessoas;
+    if( carro.quantidadePessoas === carro.assentos && totalPessoas >= carro.assentos ) {
+      return 'O carro já está lotado!';
+    }
 
+    if( totalPessoas > carro.assentos ) {
+      var quantasPessoasCabem = carro.assentos - carro.quantidadePessoas;
+      var pluralOuSingular = quantasPessoasCabem === 1 ? ' pessoa' : ' pessoas';
+      return 'Só cabem mais ' + quantasPessoasCabem + pluralOuSingular + '!';
+    }
+
+    carro.quantidadePessoas += numeroPessoas;
+    return 'Já temos ' + carro.quantidadePessoas + ' pessoas no carro!';
+  };
  
  /*
  Agora vamos verificar algumas informações do carro. Para as respostas abaixo,
@@ -118,40 +132,39 @@ para o contrário.
  
  Qual a cor atual do carro?
  */
-
+ carro.obterCor();
  
  // Mude a cor do carro para vermelho.
- 
+ carro.mudarCor( 'Vermelho' );
  
  // E agora, qual a cor do carro?
-
+ carro.obterCor(); // Vermelho
  
  // Mude a cor do carro para verde musgo.
-
+ carro.mudarCor( 'Amarelo' );
  
  // E agora, qual a cor do carro?
-
- 
+ carro.obterCor(); // Amarelo
  
  // Qual a marca e modelo do carro?
-
+ carro.obterMarcaModelo(); // Esse carro é um Polo Volkswagen
  
  // Adicione 2 pessoas no carro.
-
+ carro.adicionarPessoas(2); // Já temos 2 pessoas no carro!
  
  // Adicione mais 4 pessoas no carro.
-
+ carro.adicionarPessoas(4); // Só cabem mais 3 pessoas!
  
  // Faça o carro encher.
-
+ carro.adicionarPessoas(3); // Já temos 4 pessoas no carro!
  
  // Tire 4 pessoas do carro.
-
+ carro.adicionarPessoas(-4); // Já temos 1 pessoa no carro!
  
  // Adicione 10 pessoas no carro.
-
+ carro.adicionarPessoas(10); // Só cabem mais 4 pessoas!
  
  // Quantas pessoas temos no carro?
- 
+ carro.quantidadePessoas // 1
     
 })();
