@@ -26,7 +26,7 @@
   no primeiro parâmetro. O índice usado para retornar o valor, deve ser o número passado no
   segundo parâmetro.
   */
-  // ?
+  function myFunction2() {};
 
   /*
   Declare uma variável que recebe um array com 5 valores, de tipos diferentes.
