@@ -59,32 +59,59 @@
   - Se o parâmetro não for passado, a função deve retornar o objeto com todos
   os livros.
   */
-  // ?
+  function book( bookName ) {
+    var allBooks = {
+      'Segredos do Ninja Javascript': {
+        quantidadePaginas: 480,
+        autor: 'Israel Alves',
+        editora: 'Novatec'
+      },
+      'Introdução ao HTML5': {
+        quantidadePaginas: 250,
+        autor: 'Ismael E.',
+        editora: 'Alta Books'
+      },
+      'Smashing CSS': {
+        quantidadePaginas: 280,
+        autor: 'Isaac Alves',
+        editora: 'Bookman'
+      }
+    };
+
+    if( !bookName ) {
+      return allBooks;
+    }
+
+    return allBooks[ bookName ];
+
+    //return !bookName ? allBooks : allBooks[ bookName ]; reduzir a opcção acima usando ternário
+  }
 
   /*
   Usando a função criada acima, imprima o objeto com todos os livros.
   */
-  // ?
+  book();
 
   /*
   Ainda com a função acima, imprima a quantidade de páginas de um livro qualquer,
   usando a frase:
   "O livro [NOME_DO_LIVRO] tem [X] páginas!"
   */
-  // ?
+ var bookName = 'Segredos do Ninja Javascript';
+  'O livro ' + bookName + ' tem ' + book( bookName ).quantidadePaginas + ' páginas!'
 
   /*
   Ainda com a função acima, imprima o nome do autor de um livro qualquer, usando
   a frase:
   "O autor do livro [NOME_DO_LIVRO] é [AUTOR]."
   */
-  // ?
+  'O autor do livro ' + bookName + ' é ' + book( bookName ).autor + '.'
 
   /*
   Ainda com a função acima, imprima o nome da editora de um livro qualquer, usando
   a frase:
   "O livro [NOME_DO_LIVRO] foi publicado pela editora [NOME_DA_EDITORA]."
   */
-  // ?
+  'O livro ' + bookName + ' foi publicado pela editora ' + book( bookName ).editora + '.'
     
 })();
